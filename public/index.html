@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UwU Cafe Fortune Wheel</title>
+    <title>Burgershot Fortune Wheel</title>
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+    <!-- stylesheet link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = center_element></div>
-    <div class = "container">
-        <div class="set">1</div>
-        <div class="set">2</div>
-        <div class="set">3</div>
-        <div class="set">4</div>
-        <div class="set">5</div>
-        <div class="set">6</div>
-        <div class="set">7</div>
-        <div class="set">8</div>
-        <div class="set">9</div>
-        <div class="set">10</div>
-        <div class="set">11</div>
-        <div class="set">12</div>
-    </div>  
-
-    <script src="app.js"></script>
+    <header>
+        <!-- <img src = 'img/banner.svg' class = 'banner'> -->
+        <h1>Loteria Burgershot</h1>
+    </header>
+    <div class = "container-grid">
+        <div class = center_element></div>
+        <div class = "wheel">
+            <div class="set">1</div>
+            <div class="set">2</div>
+            <div class="set">3</div>
+            <div class="set">4</div>
+            <div class="set">5</div>
+            <div class="set">6</div>
+            <div class="set">7</div>
+            <div class="set">8</div>
+            <div class="set">9</div>
+            <div class="set">10</div>
+            <div class="set">11</div>
+            <div class="set">12</div>
+        </div>
+    </div>
+    <div class = "row-grid">
+        <p id = "reward_output"></p>
+    </div>
+    <div class = row-grid>
+        <button id="doubling_button" data-visible = "hidden"><strong>Chcesz zagrać o więcej?</strong></button>
+    </div>
+    <footer>
+        <a href = https://github.com/Ugulele target="_blank">&copy; Ugulele</a>
+    </footer>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
