@@ -9,6 +9,7 @@ const chooseReward = (index) => rewardList[index];
 
 const rewardHandler = (reward) => {
 	const { text: outputString, result, amount, currency } = reward;
+	centerElement.removeEventListener('click', centerElementClickHandler)
 
 	const betEventHandler = (result, amount, currency) => {
 		button.setAttribute("data-visible", "showed");
@@ -41,6 +42,7 @@ const rewardHandler = (reward) => {
 		if (["win", "fine"].includes(result)) {
 			betEventHandler(result, amount, currency);
 		}
+		centerElement.addEventListener('click', centerElementClickHandler)
 	}, 5200);
 
 	const betForDoublingReward = (outputString) => {
@@ -83,9 +85,10 @@ const countElementNumber = (angle) => {
 	return elementNumber;
 };
 
-centerElement.addEventListener("click", () => {
+const centerElementClickHandler = () => {
 	button.setAttribute("data-visible", "hidden");
 	outputElement.innerText = "";
+	
 	const angle = Math.floor(Math.random() * 1800);
 	wheel.style.transform = `rotate(${angle}deg)`;
 
@@ -93,8 +96,10 @@ centerElement.addEventListener("click", () => {
 	const reward = chooseReward(elementNumber);
 
 	rewardHandler(reward);
-});
+}
 
-const footerText = document.querySelector("a");
+centerElement.addEventListener("click", centerElementClickHandler);
+
+const footerText = document. querySelector("a");
 const date = new Date();
 footerText.innerText = `${footerText.innerText} ${date.getFullYear()}`;

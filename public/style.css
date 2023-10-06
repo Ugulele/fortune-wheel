@@ -182,8 +182,8 @@ p
     border-radius: 50%;
     text-align: center;
     border: 5px solid var(--orange-dark);
-    z-index: 10;
     cursor: pointer;
+    z-index: 10;
     background-image: url(img/logo.png);
     background-position: center center;
     background-size: 100px 100px;
