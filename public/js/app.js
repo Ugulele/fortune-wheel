@@ -49,9 +49,9 @@ const rewardHandler = (reward) => {
     const random = Math.random();
 
     outputElement.innerText =
-      Number(random) >= 0.75
-        ? `${outputString} w zestawie`
-        : `Przegrałeś, odchodzisz z pustymi rękami`;
+			Number(random) >= 0.75
+				? `${outputString} i to z zestawem`
+				: `Przegrałeś, odchodzisz z pustymi rękami`
   };
 
   const betForDoublingFine = (outputString) => {

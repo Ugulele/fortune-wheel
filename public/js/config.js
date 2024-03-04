@@ -26,7 +26,7 @@ export const rewardList = [
 		"result": "lose",
 	},
 	{
-		"text": "Gratulacje, smacznych skrzydełek",
+		"text": "Gratulacje, Twój stek już się smaży",
 		"result": "win",
 	},
 	{
@@ -52,7 +52,7 @@ export const rewardList = [
 		"result": "lose",
 	},
 	{
-		"text": "Spragniony, o to twoja E-Cola!",
+		"text": "Spragniony, o to twoja Cysterna Lemoniady",
 		"result": "win",
 	},
 	{
